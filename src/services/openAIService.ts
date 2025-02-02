@@ -1,7 +1,5 @@
 import OpenAI from "openai";
 import dotenv from "dotenv";
-import { log } from "console";
-import { parse } from "path";
 
 dotenv.config();
 
