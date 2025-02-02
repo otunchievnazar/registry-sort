@@ -1,5 +1,4 @@
 import pdfParse from 'pdf-parse';
-import { v4 as uuidv4 } from 'uuid';
 
 export class PdfService {
   async convertPdfToText(file: Express.Multer.File): Promise<string> {
@@ -19,12 +18,12 @@ export class PdfService {
 
     const regex = new RegExp(`${headingText}([\\s\\S]*?)${endingText}`, 'g');
     let match;
-    let id = 0;
+    let registryId = 0;
     while ((match = regex.exec(text)) !== null) {
       const content = match[1].trim();
-      id++
+      registryId++;
       documents.push({
-        id,
+        id: registryId,
         content,
       });
     }

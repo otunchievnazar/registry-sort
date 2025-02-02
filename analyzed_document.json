@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "analysis": {
+    "name": "ТРИОФЛЕЙМ 8800",
+    "manufacturer": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"О3-КОУТИНГС\"",
+    "base": "not found",
+    "ptm_mm": "3,4 мм",
+    "layer_thickness_mm": "0,50 мм",
+    "consumption_kg_m2": "0,55 кг/м²",
+    "fire_resistance_limit_min": "30 мин.",
+    "type": "двухкомпонентный огнезащитный атмосферостойкий состав",
+    "brands_used_in_system": "Hempadur Fast Dry 17410, HEMPATHANE FAST DRY 55750",
+    "certificate_validity_period": "26.03.2027",
+    "operating_conditions_temperature": "от плюс 5 °С до плюс 30 °С",
+    "resistance_to_aggressive_media": "not found",
+    "name_of_used_primer": "Hempadur Fast Dry 17410",
+    "material_description_text_from_internet": "not found",
+    "certificate_registration_number": "ЕАЭС RU С-RU.ПБ68.В.00954/22"
+  }
+}
