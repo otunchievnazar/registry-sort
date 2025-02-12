@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const port = 4002;
+const port = 4003;
 
 app.use(express.json());
 app.use('/api', pdfRoutes);

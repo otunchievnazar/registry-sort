@@ -41,7 +41,6 @@ export const queryPineconeVectorStoreAndQueryLLM = async (
     const concatenatedPageContent = queryResponse.matches
       .map((match) => match.metadata?.pageContent)
       .join(" ");
-    console.log(chain)
     const document = new Document({ pageContent: concatenatedPageContent });
 
     const result = await chain.invoke({

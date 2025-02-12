@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "es2022",
     "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
@@ -8,5 +8,5 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": ["api", "langchain-pinecone"]
 }

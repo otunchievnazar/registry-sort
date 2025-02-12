@@ -1,20 +1,20 @@
 {
   "id": 1,
   "analysis": {
-    "name": "ТРИОФЛЕЙМ 8800",
+    "name": "Средство огнезащиты для стальных конструкций: двухкомпонентный огнезащитный атмосферостойкий состав «ТРИОФЛЕЙМ 8800»",
     "manufacturer": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"О3-КОУТИНГС\"",
-    "base": "not found",
-    "ptm_mm": "3,4 мм",
-    "layer_thickness_mm": "0,50 мм",
-    "consumption_kg_m2": "0,55 кг/м²",
-    "fire_resistance_limit_min": "30 мин.",
-    "type": "двухкомпонентный огнезащитный атмосферостойкий состав",
-    "brands_used_in_system": "Hempadur Fast Dry 17410, HEMPATHANE FAST DRY 55750",
+    "base": "грунт-эмаль марки «АКРУС Эпокс С»",
+    "ptm_mm": "3.4",
+    "layer_thickness_mm": "[0.075, 0.50, 0.60]",
+    "consumption_kg_m2": "[0.55, 0.81]",
+    "fire_resistance_limit_min": "[15, 30, 45]",
+    "type": "Средство огнезащиты",
+    "brands_used_in_system": "[\"Hempel\", \"АКРУС\"]",
     "certificate_validity_period": "26.03.2027",
-    "operating_conditions_temperature": "от плюс 5 °С до плюс 30 °С",
-    "resistance_to_aggressive_media": "not found",
+    "operating_conditions_temperature": "[+5, +30]",
+    "resistance_to_aggressive_media": "не упоминается",
     "name_of_used_primer": "Hempadur Fast Dry 17410",
-    "material_description_text_from_internet": "not found",
+    "material_description_text_from_internet": "ТРИОФЛЕЙМ 8800 – двухкомпонентный огнезащитный атмосферостойкий состав, предназначен для защиты стальных конструкций.",
     "certificate_registration_number": "ЕАЭС RU С-RU.ПБ68.В.00954/22"
   }
 }

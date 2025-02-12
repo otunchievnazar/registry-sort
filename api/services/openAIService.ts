@@ -13,23 +13,24 @@ export class OpenAIService {
 
   async analyzeText(content: string): Promise<any> {
     const prompt = `
-      You are an assistant that analyzes the following Russian text and extracts the following columns.
-          Return the result as a JSON object with variables in English for keys, for value just return string in Russian. If you dont find somethign - mark not found but try to find the info online:
-          - name
-          - manufacturer
-          - base
-          - ptm_mm
-          - layer_thickness_mm
-          - consumption_kg_m2
-          - fire_resistance_limit_min
-          - type
-          - brands_used_in_system
-          - certificate_validity_period
-          - operating_conditions_temperature
-          - resistance_to_aggressive_media
-          - name_of_used_primer
-          - material_description_text_from_internet
-          - certificate_registration_number
+      Вы являетесь ассистентом, который анализирует следующий русский текст и извлекает следующие столбцы.
+Верните результат предоставив всю относящуюся информацию о следующих параметрах:
+
+name (название)
+manufacturer (производитель)
+base (основа)
+ptm_mm (ПТМ, мм)-> this should be a range
+layer_thickness_mm (толщина слоя, мм)-> this should be a
+consumption_kg_m2 (расход, кг/м²)-> this should be a range
+fire_resistance_limit_min (предел огнестойкости, мин)-> this should be a range
+type (тип)
+brands_used_in_system (бренды, используемые в системе)
+certificate_validity_period (срок действия сертификата)
+operating_conditions_temperature (температура условий эксплуатации)
+resistance_to_aggressive_media (стойкость к агрессивным средам)
+name_of_used_primer (название используемого грунта)
+material_description_text_from_internet (описание материала из интернета)
+certificate_registration_number (регистрационный номер сертификата)
 
       Text:
     `;
@@ -57,7 +58,7 @@ export class OpenAIService {
       if (!content) {
         throw new Error("No content in response");
       }
-      
+
       return JSON.parse(
         content
           .replace(/```json/g, "")

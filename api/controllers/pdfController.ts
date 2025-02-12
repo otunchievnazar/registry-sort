@@ -34,7 +34,10 @@ export default class PdfController {
       }
 
       const text = await this.pdfService.convertPdfToText(file);
+
       const documents = this.pdfService.splitDocuments(text);
+
+      console.log(documents[0], 'XXXXXXXXX');
 
       // Analyze only the first section
       const firstDocument = documents[0];
