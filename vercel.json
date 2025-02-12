@@ -5,7 +5,7 @@
       "src": "dist/api/server.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["dist/api/**/*"]
+        "includeFiles": ["dist/**/**/*"]
       }
     }
   ],
@@ -14,10 +14,5 @@
       "src": "/(.*)",
       "dest": "dist/api/server.js"
     }
-  ],
-  "build": {
-    "env": {
-      "TS_NODE": "1"
-    }
-  }
+  ]
 }
