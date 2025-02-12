@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/api/server.js",
+      "src": "dist/server.js",
       "use": "@vercel/node",
       "config": {
         "includeFiles": ["dist/**/**/*"]
@@ -14,5 +14,13 @@
       "src": "/(.*)",
       "dest": "dist/api/server.js"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "TS_NODE": "1"
+    }
+  }
 }
