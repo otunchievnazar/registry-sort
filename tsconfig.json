@@ -5,10 +5,7 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist/api", // Ensure output goes to /dist/api
-    "rootDir": "./api"
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["api/**/*"],
-  "exclude": ["node_modules", "dist"] // Exclude unnecessary directories
+  "exclude": ["node_modules", "dist"]
 }
