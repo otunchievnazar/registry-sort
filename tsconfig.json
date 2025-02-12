@@ -6,7 +6,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist"
+    "outDir": "./dist/api", // Ensure output goes to /dist/api
+    "rootDir": "./api"
   },
-  "include": ["api/**/*", "langchain-pinecone"]
+  "include": ["api/**/*"],
+  "exclude": ["node_modules", "dist"] // Exclude unnecessary directories
 }
