@@ -20,9 +20,9 @@ name (название)
 manufacturer (производитель)
 base (основа)
 ptm_mm (ПТМ, мм)-> this should be a range
-layer_thickness_mm (толщина слоя, мм)-> this should be a
-consumption_kg_m2 (расход, кг/м²)-> this should be a range
-fire_resistance_limit_min (предел огнестойкости, мин)-> this should be a range
+layer_thickness_mm (толщина слоя, мм)-> this should be a range (min - max)
+consumption_kg_m2 (расход, кг/м²)-> this should be a range (min - max)
+fire_resistance_limit_min (предел огнестойкости, мин)-> this should be a range (mix - max)
 type (тип)
 brands_used_in_system (бренды, используемые в системе)
 certificate_validity_period (срок действия сертификата)

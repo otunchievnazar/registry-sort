@@ -2,25 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/api/server.js",
+      "src": "dist/server.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["dist/**/**/*"]
+        "includeFiles": ["dist/**"],
+        "nodeVersion": "20.x"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/api/server.js"
+      "dest": "dist/server.js"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "build": {
-    "env": {
-      "TS_NODE": "1"
-    }
-  }
+  ]
 }

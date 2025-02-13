@@ -9,5 +9,5 @@
     "outDir": "./dist"
   },
   "include": ["**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "analyzed_document.json", "analyzed_documents.json"]
 }
