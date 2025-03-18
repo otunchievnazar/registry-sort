@@ -8,7 +8,7 @@ import { OpenAIService } from "./api/services/openAIService";
 
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3009;
 
 const pdfService = new PdfService();
 const openAIService = new OpenAIService();
