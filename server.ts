@@ -8,7 +8,7 @@ import { OpenAIService } from "./api/services/openAIService";
 
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 4003;
+const port = process.env.PORT || 3000;
 
 const pdfService = new PdfService();
 const openAIService = new OpenAIService();
@@ -136,4 +136,4 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
 
-export default app;
+module.exports = app;
