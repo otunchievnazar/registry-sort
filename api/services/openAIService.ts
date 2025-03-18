@@ -37,7 +37,7 @@ certificate_registration_number (регистрационный номер се�
     let fileContent = content;
     try {
       const response = await this.openai.chat.completions.create({
-        model: "deepseek-chat", // Use GPT-4-Turbo for efficiency
+        model: "gpt-4-turbo", // Use GPT-4-Turbo for efficiency
         messages: [
           {
             role: "system",
